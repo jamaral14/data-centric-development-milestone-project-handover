@@ -17,6 +17,10 @@ mongo = PyMongo(app)
 def get_handover():
     return render_template("handover.html", handover=mongo.db.handover.find())
 
+@app.route('/')
+@app.route('/get_addhandover')
+def get_addhandover():
+    return render_template('addhandover.html')
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '0.0.0.0'),

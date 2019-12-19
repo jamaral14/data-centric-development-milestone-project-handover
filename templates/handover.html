@@ -1,15 +1,18 @@
-<html>
-    <head>
+{% extends 'base.html' %} 
+{% block lines %} 
 
-    </head>
-    <body>
-        {% for handover in handover %}
-            {{handover.title}}
-            {{handover.first_name}}
-            {{handover.surname}}
-            {{handover.dob}}
-            {{handover.address}}
-            {{handover.diabetes}}
-        {% endfor %}
-    </body>
-</html>
+  <ul class="collapsible" data-collapsible="accordion">
+    {% for handover in handover %}
+    <li>
+      <div class="collapsible-header"><i class="material-icons">assignment_ind</i>
+      <strong>{{handover.title}} - {{handover.first_name}} - {{handover.surname}}</strong>
+      </div>
+      <div class="collapsible-body"><span>
+      {{handover.dob}} - {{handover.address}} - {{handover.diabetes}}
+      </span>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}

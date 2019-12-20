@@ -20,7 +20,8 @@ def get_handover():
 @app.route('/')
 @app.route('/get_addhandover')
 def get_addhandover():
-    return render_template('addhandover.html')
+    return render_template('addhandover.html',
+    sections=mongo.db.sections.find())
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '0.0.0.0'),

@@ -1,9 +1,21 @@
 {% extends 'base.html' %} {% block lines %}
 
  <h5>Add Handover</h5>
+
 <div class="row">
     <form  action="" method="POST" class="col s12">
         <div class="row">
+         <div class="input-field col s12">
+         <i class="material-icons prefix">poll</i>
+    <select id= "sections" name= "select_option">
+      <option value="" disabled selected>Choose Patient option</option>
+      {% for sec in sections %}
+      <option value="{{sec.select_option}}">{{sec.select_option}}</option>
+      {% endfor %}
+    </select>
+    <label>Select more options</label>
+  </div>
+  </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">assignment</i>
                 <input id="first_name" name="first_name" type="text" class="validate">
@@ -25,8 +37,8 @@
         </div>
         </div>
                 <div class="row">
+                <div id= "matfix">
             <div class="input-field col s12">
-            <div id= "matfix">
                 <i class="material-icons prefix">today</i>
                 <input id="dob" name="dob" type="text" class="datepicker">
                 <label for="icon_prefix">Due Date</label>

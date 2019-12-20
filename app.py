@@ -49,7 +49,17 @@ def update_handover(handover_id):
         'diabetes':request.form.get('diabetes'),
         'patient_fluids':request.form.get('patient_fluids')
     })
-    return redirect(url_for('get_handover'))                            
+    return redirect(url_for('get_handover'))    
+
+@app.route('/delete_handover/<handover_id>')
+def delete_handover(handover_id):
+    mongo.db.handover.remove({'_id': ObjectId(handover_id)})
+    return redirect(url_for('get_handover'))    
+
+@app.route('/get_sections')
+def get_sections():
+    return render_template('sections.html',
+                           sections=mongo.db.sections.find())
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '0.0.0.0'),

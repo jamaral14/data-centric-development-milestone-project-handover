@@ -1,0 +1,69 @@
+{% extends 'base.html' %} {% block lines %}
+
+ <h5>Edit Handover</h5>
+
+<div class="row">
+    <form  action="{{ url_for('insert_handover') }}" method="POST" class="col s12">
+        <div class="row">
+         <div class="input-field col s12">
+         <i class="material-icons prefix">poll</i>
+    <select id= "sections" name= "select_option">
+      <option value="" disabled selected>Choose Patient option</option>
+      {% for sec in sections %}
+      <option value="{{sec.select_option}}">{{sec.select_option}}</option>
+      {% endfor %}
+    </select>
+    <label>Select more options</label>
+  </div>
+  </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">assignment</i>
+                <input id="first_name" name="first_name" type="text" class="validate">
+                <label for="icon_prefix">First Name</label>
+            </div>
+            </div>
+            <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">subject</i>
+                <textarea name="blood_pressure" id="blood_pressure" class="materialize-textarea"></textarea>
+                <label for="icon_telephone">Blood Pressure</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">subject</i>
+                <textarea name="patient_fluids" id="patient_fluids" class="materialize-textarea"></textarea>
+                <label for="icon_telephone">Patient Fluid</label>
+        </div>
+        </div>
+        
+        <div class="row">
+    <div class="input-field col s12">
+    <i class="material-icons prefix">poll</i>
+    <select>
+      <option value="" disabled selected>Diabetes</option>
+      <option value="1">YES</option>
+      <option value="2">NO</option>
+    </select>
+    <label>Diabetes ?</label>
+  </div>
+        </div>
+                <div class="row">
+                <div id= "matfix">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">today</i>
+                <input id="dob" name="dob" type="text" class="datepicker">
+                <label for="icon_prefix">Due Date</label>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Add Handover
+                <i class="material-icons right">playlist_add</i>
+             </button>
+        </div>
+
+    </form>
+</div>
+
+{% endblock %}

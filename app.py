@@ -23,6 +23,12 @@ def get_addhandover():
     return render_template('addhandover.html',
     sections=mongo.db.sections.find())
 
+@app.route('/insert_handover', methods=['POST'])
+def insert_handover():
+    handover = mongo.db.handover
+    handover.insert_one(request.form.to_dict())
+    return redirect(url_for('get_handover'))    
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '0.0.0.0'),
             port=int(os.environ.get('PORT','3000')),

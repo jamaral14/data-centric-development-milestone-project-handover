@@ -34,7 +34,22 @@ def edit_handover(handover_id):
     the_handover =  mongo.db.handover.find_one({"_id": ObjectId(handover_id)})
     all_sections =  mongo.db.sections.find()
     return render_template('edithandover.html', handover=the_handover,
-                           sections=all_sections)      
+                           sections=all_sections)   
+
+@app.route('/update_handover/<handover_id>', methods=["POST"])
+def update_handover(handover_id):
+    handover = mongo.db.handover
+    handover.update( {'_id': ObjectId(handover_id)},  
+    {
+        'title':request.form.get('title'),
+        'first_name':request.form.get('first_name'),
+        'surname': request.form.get('surname'),
+        'dob': request.form.get('dob'),
+        'blood_pressure':request.form.get('blood_pressure'),
+        'diabetes':request.form.get('diabetes'),
+        'patient_fluids':request.form.get('patient_fluids')
+    })
+    return redirect(url_for('get_handover'))                            
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '0.0.0.0'),

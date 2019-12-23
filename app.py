@@ -61,6 +61,11 @@ def get_sections():
     return render_template('sections.html',
                            sections=mongo.db.sections.find())
 
+@app.route('/delete_sections/<sections_id>')
+def delete_sections(sections_id):
+    mongo.db.sections.remove({'_id': ObjectId(sections_id)})
+    return redirect(url_for('get_sections'))                            
+
 @app.route('/edit_sections/<sections_id>')
 def edit_sections(sections_id):
     return render_template('editsections.html',
@@ -73,12 +78,7 @@ def update_sections(sections_id):
          {'_id': ObjectId(sections_id)},
         {'select_option': request.form.get('select_option')})
     return redirect(url_for('get_sections'))     
-
-@app.route('/delete_sections/<sections_id>')
-def delete_sections(sections_id):
-    mongo.db.sections.remove({'_id': ObjectId(sections_id)})
-    return redirect(url_for('get_sections'))    
-
+ 
 @app.route('/insert_sections', methods=['POST'])
 def insert_sections():
     sections_doc = {'select_option': request.form.get('select_option')}

@@ -7,7 +7,7 @@
     {% for sections in sections %}
     <li>
       <div class="collapsible-header"><i class="material-icons">assignment_ind</i>
-                    <a href="" class="waves-effect waves-light btn btn_small">Del</a>
+                    <a href="{{url_for('delete_sections', sections_id=sections._id)}}" class="waves-effect waves-light btn btn_small">DEL</a>
                     <a href="{{url_for('edit_sections', sections_id=sections._id)}}" class="waves-effect waves-light btn btn_small blue">Edit</a>            
                 <div class="handover_header col s9">
       <strong>{{sections.select_option}}</strong>
@@ -16,7 +16,10 @@
     </li>
     {% endfor %}
   </ul>
-
-</div>  
-
+  </div>  
+<div class="row">
+    <a href="{{url_for('add_sections')}}" class="waves-effect waves-light btn">
+        <i class="material-icons right">playlist_add</i>Add Sections
+    </a>
+</div>
 {% endblock %}

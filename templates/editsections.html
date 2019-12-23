@@ -3,7 +3,7 @@
  <h5>Edit Sections</h5>
 
 <div class="row">
-    <form  action="{{ url_for('update_handover') }}" method="POST" class="col s12">
+    <form  action="{{ url_for('update_sections', sections_id=sections._id) }}" method="POST" class="col s12">
             <div class="input-field col s12">
                 <i class="material-icons prefix">poll</i>
                 <input id="select_option" name="select_option" type="text" class="validate" value="{{sections.select_option}}">

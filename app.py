@@ -77,6 +77,12 @@ def update_sections(sections_id):
 @app.route('/delete_sections/<sections_id>')
 def delete_sections(sections_id):
     mongo.db.sections.remove({'_id': ObjectId(sections_id)})
+    return redirect(url_for('get_sections'))    
+
+@app.route('/insert_sections', methods=['POST'])
+def insert_sections():
+    sections_doc = {'select_option': request.form.get('select_option')}
+    mongo.db.sections.insert_one(sections_doc)
     return redirect(url_for('get_sections'))                                                   
 
 if __name__ == '__main__':

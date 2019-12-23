@@ -5,7 +5,7 @@
 <div class="row">
     <form  action="{{ url_for('insert_handover') }}" method="POST" class="col s12">
         <div class="row">
-         <div class="input-field col s12">
+         <div class="input-field col s6">
          <i class="material-icons prefix">poll</i>
     <select id= "sections" name= "select_option">
       <option value="" disabled selected>Choose Patient option</option>
@@ -16,21 +16,21 @@
     <label>Select more options</label>
   </div>
   </div>
-            <div class="input-field col s12">
+            <div class="input-field col s6">
                 <i class="material-icons prefix">assignment</i>
                 <input id="first_name" name="first_name" type="text" class="validate">
                 <label for="icon_prefix">First Name</label>
             </div>
             </div>
             <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s6">
                 <i class="material-icons prefix">subject</i>
                 <textarea name="blood_pressure" id="blood_pressure" class="materialize-textarea"></textarea>
                 <label for="icon_telephone">Blood Pressure</label>
             </div>
         </div>
         <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s6">
                 <i class="material-icons prefix">subject</i>
                 <textarea name="patient_fluids" id="patient_fluids" class="materialize-textarea"></textarea>
                 <label for="icon_telephone">Patient Fluid</label>
@@ -38,7 +38,7 @@
         </div>
         
         <div class="row">
-    <div class="input-field col s12">
+    <div class="input-field col s6">
     <i class="material-icons prefix">poll</i>
     <select>
       <option value="" disabled selected>Diabetes</option>
@@ -50,7 +50,7 @@
         </div>
                 <div class="row">
                 <div id= "matfix">
-            <div class="input-field col s12">
+            <div class="input-field col s6">
                 <i class="material-icons prefix">today</i>
                 <input id="dob" name="dob" type="text" class="datepicker">
                 <label for="icon_prefix">Due Date</label>

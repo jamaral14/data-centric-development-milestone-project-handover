@@ -83,7 +83,11 @@ def delete_sections(sections_id):
 def insert_sections():
     sections_doc = {'select_option': request.form.get('select_option')}
     mongo.db.sections.insert_one(sections_doc)
-    return redirect(url_for('get_sections'))                                                   
+    return redirect(url_for('get_sections'))          
+
+@app.route('/add_sections')
+def add_sections():
+    return render_template('addsections.html')                                             
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '0.0.0.0'),

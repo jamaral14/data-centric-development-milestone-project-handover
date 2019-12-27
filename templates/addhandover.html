@@ -8,7 +8,7 @@
          <div class="input-field col s12">
          <i class="material-icons prefix">poll</i>
     <select id= "sections" name= "select_option">
-      <option value="" disabled selected>Choose Patient option</option>
+      <option value="" disabled selected>Choose Patient Name</option>
       {% for sec in sections %}
       <option value="{{sec.select_option}}">{{sec.select_option}}</option>
       {% endfor %}
@@ -19,7 +19,7 @@
             <div class="input-field col s12">
                 <i class="material-icons prefix">assignment</i>
                 <input id="temperature" name="temperature" type="text" class="validate">
-                <label for="icon_prefix">Patient Temperature</label>
+                <label for="icon_prefix">Patient Temperature</label>                
             </div>
             </div>
             <div class="row">
@@ -42,8 +42,8 @@
     <i class="material-icons prefix">poll</i>
     <select>
       <option value="" disabled selected>Diabetes</option>
-      <option value="1">YES</option>
-      <option value="2">NO</option>
+      <option value="1">Diabetes -> YES</option>
+      <option value="2">Diabetes -> NO</option>
     </select>
     <label>Diabetes ?</label>
   </div>
@@ -67,3 +67,4 @@
 </div>
 
 {% endblock %}
+

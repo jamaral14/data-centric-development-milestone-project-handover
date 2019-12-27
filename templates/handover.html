@@ -10,7 +10,7 @@
               <img src="static/img/PatientCode.jpeg">
             </div>
             <div class="card-content">
-              <p><strong>{{handover.title}}   {{handover.first_name}}  {{handover.surname}}</strong></p>
+              <p><strong> {{handover.name}} {{handover.diabetes}} {{handover.dob}}  </strong></p>
             </div>
             <div class="card-action">
             <a href="{{url_for('delete_handover', handover_id=handover._id)}}"class="waves-effect waves-light btn btn_small">DEL</a>

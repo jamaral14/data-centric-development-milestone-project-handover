@@ -41,9 +41,8 @@ def update_handover(handover_id):
     handover = mongo.db.handover
     handover.update( {'_id': ObjectId(handover_id)},  
     {
-        'title':request.form.get('title'),
-        'first_name':request.form.get('first_name'),
-        'surname': request.form.get('surname'),
+        'name':request.form.get('name'),
+        'temperature':request.form.get('temperature'),
         'dob': request.form.get('dob'),
         'blood_pressure':request.form.get('blood_pressure'),
         'diabetes':request.form.get('diabetes'),

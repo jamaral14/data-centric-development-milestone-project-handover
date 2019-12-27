@@ -10,7 +10,7 @@
     <select id= "sections" name= "select_option">
       <option value="" disabled selected>Choose Patient option</option>
       {% for sec in sections %}
-          {% if sec.sections_select_option == handover.title %}
+          {% if sec.sections_select_option == handover.name %}
 
       <option value="{{sec.select_option}}" selected >{{sec.select_option}}</option>
           {% else %}
@@ -23,7 +23,7 @@
   </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">assignment</i>
-                <input id="temperature" name="temperature" type="text" class="validate" value="{{handover.temperature}}">
+              <textarea name="temperature" id="temperature" class="materialize-textarea">{{handover.temperature}}</textarea>
                 <label for="icon_prefix">Patient Temperature</label>
             </div>
             </div>
@@ -47,8 +47,8 @@
     <i class="material-icons prefix">poll</i>
     <select>
       <option value="" disabled selected>Diabetes</option>
-      <option value="1">YES</option>
-      <option value="2">NO</option>
+      <option value="1">Diabetes -> YES</option>
+      <option value="2">Diabetes -> NO</option>
     </select>
     <label>Diabetes ?</label>
   </div>

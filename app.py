@@ -1,6 +1,6 @@
 import os
 if os.path.exists('env.py'):
-   import env
+    import env
 from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId 
@@ -42,7 +42,7 @@ def update_handover(handover_id):
     handover = mongo.db.handover
     handover.update( {'_id': ObjectId(handover_id)},  
     {
-        'name':request.form.get('name'),
+        'select_option':request.form.get('select_option'),
         'temperature':request.form.get('temperature'),
         'dob': request.form.get('dob'),
         'blood_pressure':request.form.get('blood_pressure'),

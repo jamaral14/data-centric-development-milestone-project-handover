@@ -1,32 +1,31 @@
-{% extends 'base.html' %} 
-{% block lines %} 
-  {% for handover in handover %}
+{% extends 'base.html' %}
+{% block lines %}
 
-<div class="container">
 <div class="row">
-     <div class="col s12 m6 l3">
-        <div class="card shadow">
-            <div class="card-image">
-              <img src="static/img/PatientCode.jpeg">
-            </div>
-            <div class="card-content">
-              <p><strong> {{handover.name}} {{handover.diabetes}} {{handover.dob}}  </strong></p>
-            </div>
-            <div class="card-action">
-            <a href="{{url_for('delete_handover', handover_id=handover._id)}}"class="waves-effect waves-light btn btn_small">DEL</a>
-            <a href="{{url_for('edit_handover', handover_id=handover._id)}}"class="waves-effect waves-light btn btn_small blue">Edit</a>
-            </div>
-          </div>
-     </div>
-    
-     </div>
-     </div>
+{% for handover in handover %}
 
-</div>
 
-</div>
+	<div class="col s12 m6 l3">
+		<div class="card">
+			<div class="card-image">
+				<img src="static/img/PatientCode.jpeg">
+			</div>
+			<div class="card-content">
+				<p><strong> {{handover.select_option}} </strong></p>
+			</div>
+			<div class="card-action">
+				<a href="{{url_for('delete_handover', handover_id=handover._id)}}"
+					class="waves-effect waves-light btn btn_small">DEL</a>
+				<a href="{{url_for('edit_handover', handover_id=handover._id)}}"
+					class="waves-effect waves-light btn btn_small blue">Edit</a>
+			</div>
+		</div>
+	</div>
+
 
 {% endfor %}
- 
+
+</div>
+
 
 {% endblock %}

@@ -15,5 +15,10 @@ nav {
 }
 
 body {
-background-image:url(../img/fundo.jpg);
+background-color: #bee7fa;
+}
+
+.card {
+background-color: rgb(196, 194, 194);
+margin-top: 50px;
 }

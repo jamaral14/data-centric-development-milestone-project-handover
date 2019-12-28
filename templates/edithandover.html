@@ -3,14 +3,14 @@
  <h5>Edit Handover</h5>
 
 <div class="row">
-    <form  action="{{ url_for('insert_handover') }}" method="POST" class="col s12">
+    <form  action="{{ url_for('update_handover', handover_id=handover._id) }}" method="POST" class="col s12">
         <div class="row">
          <div class="input-field col s12">
          <i class="material-icons prefix">poll</i>
     <select id= "sections" name= "select_option">
       <option value="" disabled selected>Choose Patient option</option>
       {% for sec in sections %}
-          {% if sec.sections_select_option == handover.name %}
+          {% if sec.select_option == handover.select_option %}
 
       <option value="{{sec.select_option}}" selected >{{sec.select_option}}</option>
           {% else %}

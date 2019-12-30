@@ -21,33 +21,42 @@
     <label>Select more options</label>
   </div>
   </div>
-            <div class="input-field col s12">
+            <div class="row">
+    <form class="col s12">     
+	<div class="row">
+          <div class="input-field col s6">
                 <i class="material-icons prefix">ac_unit</i>
               <textarea name="temperature" id="temperature" class="materialize-textarea">{{handover.temperature}}</textarea>
                 <label for="icon_prefix">Patient Temperature</label>
             </div>
-            </div>
+            
             <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s6">
                 <i class="material-icons prefix">graphic_eq</i>
                 <textarea name="blood_pressure" id="blood_pressure" class="materialize-textarea">{{handover.blood_pressure}}</textarea>
                 <label for="icon_telephone">Blood Pressure</label>
             </div>
         </div>
+          </form>
+  </div>
+    <div class="row">
+    <form class="col s12">
         <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s6">
                 <i class="material-icons prefix">grain</i>
                 <textarea name="patient_fluids" id="patient_fluids" class="materialize-textarea">{{handover.patient_fluids}}</textarea>
                 <label for="icon_telephone">Patient Fluid</label>
-        </div>
-        </div>      
+        </div>    
         
- 
+ <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">fingerprint</i>
           <textarea name="diabetes" id="diabetes" class="materialize-textarea">{{handover.diabetes}}</textarea>
           <label for="icon_prefix">Blood Sugar</label>
         </div>
+ </div>
+         </form>
+  </div>
                 <div class="row">
                 <div id= "matfix">
             <div class="input-field col s12">

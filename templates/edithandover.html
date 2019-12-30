@@ -1,13 +1,13 @@
 {% extends 'base.html' %} {% block lines %}
 
- <h5>Edit Handover</h5>
+<h5>Edit Handover</h5>
 
 <div class="row">
-    <form  action="{{ url_for('update_handover', handover_id=handover._id) }}" method="POST" class="col s12">
-        <div class="row">
-         <div class="input-field col s12">
-         <i class="material-icons prefix">poll</i>
-    <select id= "sections" name= "select_option">
+	<form action="{{ url_for('update_handover', handover_id=handover._id) }}" method="POST" class="col s12">
+		<div class="row">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">poll</i>
+				<select id= "sections" name= "select_option">
       <option value="" disabled selected>Choose Patient option</option>
       {% for sec in sections %}
           {% if sec.select_option == handover.select_option %}
@@ -18,91 +18,69 @@
           {% endif %}
       {% endfor %}
     </select>
-    <label>Select more options</label>
-  </div>
-  </div>
-            <div class="row">
-    <form class="col s12">     
-	<div class="row">
-          <div class="input-field col s6">
-                <i class="material-icons prefix">ac_unit</i>
-              <textarea name="temperature" id="temperature" class="materialize-textarea">{{handover.temperature}}</textarea>
-                <label for="icon_prefix">Patient Temperature</label>
-            </div>
-            
-            <div class="row">
-            <div class="input-field col s6">
-                <i class="material-icons prefix">graphic_eq</i>
-                <textarea name="blood_pressure" id="blood_pressure" class="materialize-textarea">{{handover.blood_pressure}}</textarea>
-                <label for="icon_telephone">Blood Pressure</label>
-            </div>
-        </div>
-          </form>
-  </div>
-    <div class="row">
-    <form class="col s12">
-        <div class="row">
-            <div class="input-field col s6">
-                <i class="material-icons prefix">grain</i>
-                <textarea name="patient_fluids" id="patient_fluids" class="materialize-textarea">{{handover.patient_fluids}}</textarea>
-                <label for="icon_telephone">Patient Fluid</label>
-        </div>    
-        
- <div class="row">
-        <div class="input-field col s6">
-          <i class="material-icons prefix">fingerprint</i>
-          <textarea name="diabetes" id="diabetes" class="materialize-textarea">{{handover.diabetes}}</textarea>
-          <label for="icon_prefix">Blood Sugar</label>
-        </div>
- </div>
-         </form>
-  </div>
-                <div class="row">
-                <div id= "matfix">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">today</i>
-                <input id="dob" name="dob" type="text" class="datepicker">
-                <label for="icon_prefix">D.O.B</label>
-            </div>
-            </div>
-        </div>
-        <br>
+				<label>Select more options</label>
+			</div>
+		</div>
 
- 
-    <p>
-      <input type="checkbox" id="test5" />
-      <label for="test5">Confirm Handover</label>
-    </p>
-    <p>
- 
-        <div class="row">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Edit Handover
+
+<div class="row">
+	<form class="col s12">
+		<div class="row">
+			<div class="input-field col s6">
+				<i class="material-icons prefix">ac_unit</i>
+				<textarea name="temperature" id="temperature" class="materialize-textarea">{{handover.temperature}}</textarea>
+				<label for="icon_prefix">Patient Temperature</label>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s6">
+					<i class="material-icons prefix">graphic_eq</i>
+					<textarea name="blood_pressure" id="blood_pressure" class="materialize-textarea">{{handover.blood_pressure}}</textarea>
+					<label for="icon_telephone">Blood Pressure</label>
+				</div>
+			</div>
+	</form>
+</div>
+
+<div class="row">
+	<form class="col s12">
+		<div class="row">
+			<div class="input-field col s6">
+				<i class="material-icons prefix">ac_unit</i>
+				<textarea name="patient_fluids" id="patient_fluids" class="materialize-textarea">{{handover.patient_fluids}}</textarea>
+				<label for="icon_prefix">Patient Fluid</label>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s6">
+					<i class="material-icons prefix">graphic_eq</i>
+					<textarea name="diabetes" id="diabetes" class="materialize-textarea">{{handover.diabetes}}</textarea>
+					<label for="icon_telephone">Blood Sugar</label>
+				</div>
+			</div>
+	</form>
+</div>
+
+<div class="row">
+	<div class="input-field col s12">
+		<i class="material-icons prefix">today</i>
+		<input id="dob" name="dob" type="text" class="datepicker">
+		<label for="icon_prefix">Due Date</label>
+	</div>
+</div>
+
+<div class="row">
+	<button class="btn waves-effect waves-light" type="submit" name="action">Edit Handover
                 <i class="material-icons right">playlist_add</i>
-             </button>
-               <!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add/Edit Comment</a>
-
-     
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Patient Comment</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-    </div>
-  </div>
-        </div>
-
-    </form>
+            </button>
+</div>
+	</form>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script type="text/javascript">
-        $(document).ready(function(){
+	$(document).ready(function(){
         dob = Date.parse('{{handover.dob}}');
         $('#dob').pickadate('picker').set('select', dob , {format: 'dd/mm/yy'}).trigger('change');
         });

@@ -25,4 +25,9 @@ margin-top: 50px;
 
 nav .brand-logo {
     position: absolute;
+    color: black;
+}
+
+nav ul {
+    color: black;
 }

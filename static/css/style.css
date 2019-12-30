@@ -22,3 +22,7 @@ background-color: #bee7fa;
 background-color: rgb(196, 194, 194);
 margin-top: 50px;
 }
+
+nav .brand-logo {
+    position: absolute;
+}

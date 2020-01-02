@@ -47,6 +47,7 @@ def update_handover(handover_id):
         'dob': request.form.get('dob'),
         'blood_pressure':request.form.get('blood_pressure'),
         'diabetes':request.form.get('diabetes'),
+        'comment':request.form.get('comment'),
         'patient_fluids':request.form.get('patient_fluids')
     })
     return redirect(url_for('get_handover'))    

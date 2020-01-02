@@ -47,13 +47,18 @@
 					<textarea name="diabetes" id="diabetes" class="materialize-textarea">{{handover.diabetes}}</textarea>
 					<label for="icon_telephone">Blood Sugar</label>
 				</div>
+                <div class="input-field col s6">
+					<i class="material-icons prefix">graphic_eq</i>
+					<textarea name="comment" id="comment" class="materialize-textarea">{{handover.comment}}</textarea>
+					<label for="icon_telephone">Add Comments</label>
+				</div>
 	</form>
 </div>
 		
 
 		<div class="row">
         <div id="matfix">
-			<div class="input-field col s12">
+			<div class="input-field col s6">
 				<i class="material-icons prefix">today</i>
 				<input id="dob" name="dob" type="text" class="datepicker">
 				<label for="icon_prefix">Due Date</label>

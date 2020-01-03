@@ -93,16 +93,16 @@ Websites used for the project's research:
 
 * <https://materializecss.com/>
 
-* [https://depositphotos.com/177346544/stock-illustration-male-patient-on-hospital-bed.html]
+* <https://depositphotos.com/177346544/stock-illustration-male-patient-on-hospital-bed.html>
 
-* [https://devcenter.heroku.com/articles/heroku-cli]
+* <https://devcenter.heroku.com/articles/heroku-cli>
 
-* [https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/?activate_block_id=block-v1%3ACodeInstitute%2BDCP101%2B2017_T3%2Btype%40sequential%2Bblock%40054c3813e82e4195b5a4d8cd8a99ebaa]
+* <https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/?activate_block_id=block-v1%3ACodeInstitute%2BDCP101%2B2017_T3%2Btype%40sequential%2Bblock%40054c3813e82e4195b5a4d8cd8a99ebaa>
 
-* [https://pypi.org/project/env.py/]
+* <https://pypi.org/project/env.py/>
 
-* [https://www.mongodb.com/]
+* <https://www.mongodb.com/>
 
-* [https://startbootstrap.com/themes/]
+* <https://startbootstrap.com/themes/>
 
 

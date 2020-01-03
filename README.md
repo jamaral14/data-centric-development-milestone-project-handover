@@ -14,7 +14,7 @@
 
 # Technologies Used
 
-* [Materialize] (http://archives.materializecss.com/0.100.2/)- This project used Materialize to implement semantic web design markup.
+* [Materialize](http://archives.materializecss.com/0.100.2/)- This project used Materialize to implement semantic web design markup.
 
 * [Materializecss](http://archives.materializecss.com/0.100.2/)- I have used Materializecss  for styling the site.
 
@@ -40,7 +40,7 @@ The main testing of this site was done to test resposiveness of the overall site
 
 # Non Local Host Testing
 
-* Tested entire site on [Responsinator][http://www.responsinator.com] as backup to ensure responsiveness.
+* Tested entire site on [Responsinator](http://www.responsinator.com) as backup to ensure responsiveness.
 
 # Real Device Testing
 
@@ -91,7 +91,7 @@ The model must be able to Create, Read, Update, and Delete resources. Ability to
 
 Websites used for the project's research:
 
-* [https://materializecss.com/]
+* <https://materializecss.com/>
 
 * [https://depositphotos.com/177346544/stock-illustration-male-patient-on-hospital-bed.html]
 

@@ -2,7 +2,11 @@
 
 ## **Why Patients Handover APP?**
 
-- 
+- Save time to Nurses, so they can give more quality time to the Patients
+- Stream line nursing documentation 
+- Entering crucial data at point of care 
+- Safer document/data control
+- enhance better comunication amongst nursing staff and improve continuity of care
 
 
 # UX
@@ -81,9 +85,9 @@ The model must be able to Create, Read, Update, and Delete resources. Ability to
 - Deploy your app by pushing its code to a special Heroku-hosted remote that’s associated with your app.
 
 - To Deploy this App, I needed to Push code first on GitHub and than through Heroku, and I needed an IP, a PORT and MONGO_URI 
-1. IP - 0.0.0.0
-2. PORT - 3000
-3. MONGO_URI
+1. __IP - 0.0.0.0__
+2. __PORT - 3000__
+3. __MONGO_URI__
 
 # Credits 
 

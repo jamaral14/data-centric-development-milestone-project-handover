@@ -14,11 +14,15 @@
 
 # Technologies Used
 
-[Materialize](http://archives.materializecss.com/0.100.2/)- This project used Materialize to implement semantic web design markup.
-[Materializecss](http://archives.materializecss.com/0.100.2/)- I have used Materializecss  for styling the site.
-[Heroku](https://devcenter.heroku.com/articles/heroku-cli)-This project used Heroku to Deploy my project and makes it easy to create and manage Heroku apps directly from the terminal.
-[MongoDB](https://www.mongodb.com/)- MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era.
-[Flask](https://www.fullstackpython.com/flask.html)- Flask is easy to get started with as a beginner because there is little boilerplate code for getting a simple app up and running.
+*[Materialize] (http://archives.materializecss.com/0.100.2/)- This project used Materialize to implement semantic web design markup.
+
+*[Materializecss](http://archives.materializecss.com/0.100.2/)- I have used Materializecss  for styling the site.
+
+*[Heroku](https://devcenter.heroku.com/articles/heroku-cli)-This project used Heroku to Deploy my project and makes it easy to create and manage Heroku apps directly from the terminal.
+
+*[MongoDB](https://www.mongodb.com/)- MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era.
+
+*[Flask](https://www.fullstackpython.com/flask.html)- Flask is easy to get started with as a beginner because there is little boilerplate code for getting a simple app up and running.
 
 # Testing
 
@@ -26,11 +30,11 @@ The main testing of this site was done to test resposiveness of the overall site
 
 * Tested on Google Chrome Dev tools on all screen resolutions available in dev tools in both portrait and landscape modes.
 
-[HTML Validador][https://validator.w3.org/]
-[CSS Validador][https://jigsaw.w3.org/css-validator/]
-[PHP Checker][https://phpcodechecker.com/]
+[HTML Validador](https://validator.w3.org/)
+[CSS Validador](https://jigsaw.w3.org/css-validator/)
+[PHP Checker](https://phpcodechecker.com/)
 
-*Tested entire site on Responsinator as backup to ensure responsiveness. [Responsinator][http://www.responsinator.com], works on different browsers and screen sizes.
+*Tested entire site on Responsinator as backup to ensure responsiveness. [Responsinator](http://www.responsinator.com), works on different browsers and screen sizes.
 
 # Non Local Host Testing
 
@@ -85,12 +89,12 @@ The model must be able to Create, Read, Update, and Delete resources. Ability to
 
 Websites used for the project's research:
 
-*[https://materializecss.com/]
-*[https://depositphotos.com/177346544/stock-illustration-male-patient-on-hospital-bed.html]
-*[https://devcenter.heroku.com/articles/heroku-cli]
-*[https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/?activate_block_id=block-v1%3ACodeInstitute%2BDCP101%2B2017_T3%2Btype%40sequential%2Bblock%40054c3813e82e4195b5a4d8cd8a99ebaa]
-*[https://pypi.org/project/env.py/]
-*[https://www.mongodb.com/]
-*[https://startbootstrap.com/themes/]
+*(https://materializecss.com/)
+*(https://depositphotos.com/177346544/stock-illustration-male-patient-on-hospital-bed.html)
+*(https://devcenter.heroku.com/articles/heroku-cli)
+*(https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/?activate_block_id=block-v1%3ACodeInstitute%2BDCP101%2B2017_T3%2Btype%40sequential%2Bblock%40054c3813e82e4195b5a4d8cd8a99ebaa)
+*(https://pypi.org/project/env.py/)
+*(https://www.mongodb.com/)
+*(https://startbootstrap.com/themes/)
 
 

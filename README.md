@@ -2,14 +2,31 @@
 
 ## **Why Patients Handover APP?**
 
+This project was created with the purpose of facilitating the handover process that occurs daily with all medical staff,
+where they share all important medical information related to the patients.
+The idea came from a gap identified in a Dialisys Unit by the staff as there was no place to save the medical information
+and they need to relly on their personal writen notes or memory.
+
+
+# UX
+
+So what are the benefits for patients, business and staff? 
+
 - Save time to Nurses, so they can give more quality time to the Patients
 - Stream line nursing documentation 
 - Entering crucial data at point of care 
 - Safer document/data control
 - enhance better comunication amongst nursing staff and improve continuity of care
 
+The project has suffered several changes during the development as the content has been shared with medical staff
+from the dialisys clinic. As it was very important to identify the areas where there was a gap for the business.
+In this sense we can mention that project can be tailored to each medical facility depending on their purpose, i.e., if more field required, if they name the ward, 
+rooms differents.
 
-# UX
+The project is focused on medical records and it was crucial do not add any photos or real cases due to GDPR. 
+If project goes live a new form will be created in order to given unique passwords to the staff.
+
+
 
 # Browser Compatibility
 
@@ -59,13 +76,13 @@ The main testing of this site was done to test resposiveness of the overall site
 * When we are building APIs, we want our models to provide four basic types of functionality.
 The model must be able to Create, Read, Update, and Delete resources. Ability to perform at most these four functions in order to be complete.
 
-- Create — This would consist of a function which we would call when a new library book is being added to the catalog.
+- __Create__ — This would consist of a function which we would call when a new library book is being added to the catalog.
 
-- Read —  This would consist of a function which would be called to see all of the books currently in the catalog.
+- __Read__ —  This would consist of a function which would be called to see all of the books currently in the catalog.
 
-- Update — There should be a function to call when information about a book must be changed.
+- __Update__ — There should be a function to call when information about a book must be changed.
 
-- Delete — There should be a function to call to remove a library book from the catalog.
+- __Delete__ — There should be a function to call to remove a library book from the catalog.
 
 # Existing Features:
 
@@ -73,7 +90,7 @@ The model must be able to Create, Read, Update, and Delete resources. Ability to
 
 # Features left to implement: 
 
-* Login and Password form 
+* Login and Password form.
 
 # Deployment
 

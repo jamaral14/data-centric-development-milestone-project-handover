@@ -1,26 +1,22 @@
-.btn_small {
-    height: 24px;
-    width: 60px;
-    line-height: 24px;
-    margin: 5px 5px;
-    padding: 0 0.5em;
-}
-
-.sections_header {
-    margin-top: 5px;
-}
-
-nav {
-    background-color: #00bfa5;
-}
 
 body {
 background-color: #bee7fa;
 }
 
+
+.sections_header {
+    margin-top: 5px;
+}
+
+
 .card {
 background-color: rgb(196, 194, 194);
 margin-top: 50px;
+}
+
+
+nav {
+    background-color: #00bfa5;
 }
 
 nav .brand-logo {
@@ -30,4 +26,13 @@ nav .brand-logo {
 
 nav ul {
     color: black;
+}
+
+
+.btn_small {
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px 5px;
+    padding: 0 0.5em;
 }
